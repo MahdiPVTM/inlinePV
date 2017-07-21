@@ -1,6 +1,6 @@
 <h1><p align="center"><stronge>Inline Source</stronge>
 <h3><p align="center"><a href="https://telegram.me/PVTeaM"> PVTeaM </a>
-<h1><p align="center"><stronge>ستاره یادتون نره:)</stronge>
+<h1><p align="center"><stronge>ستاره یادتون نره: )</stronge>
 
 
 <h3 dir="rtl"> آموزش نصب
@@ -8,7 +8,7 @@
 <h4 dir="rtl"> ابتدا سورس را کلون کنید:</h4>
 <h6😠کد زیر را در ترمینال وارد کنید👇)</h6>
 <pre>
-<span>git clone https://github.com/BibakBangTeam/inline.git</span>
+<span>git clone https://github.com/MahdiPvtmAttacker/inlinePV.git</span>
 </pre>
 <h4 dir="rtl">داخل فایل cli.lua بروید
 در خط ۱و۲و۹ بجای username یوزر سرور خودرا قرار دهید
@@ -24,17 +24,18 @@
 <br>➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖<br>
 </h4>حال ترمینال باز کنید و دستورات زیر را اجرا کنید
 <pre>
-<span>cd inline</span>
+<span>cd inlinePV</span>
 <span>chmod +x api.sh</span>
 <span>chmod +x tg</span>
 <span>chmod +x cli.sh</span>
+<span>chmod +x on.sh</span>
 <span>./cli.sh</span>
 </pre>
 
 <h4 dir="rtl">از شما شماره ربات خواسته می‌شود پس از وارد کردن آن کد ورود به اکانت ربات cli خواسته می‌شود آن را هم وارد کنید.
 <br>حال ترمینال جدید باز کنید و ربات api را با دستورات زیر ران کنید.</h4>
 <pre>
-<span>cd inline</span>
+<span>cd inlinePV</span>
 <span>./api.sh</span>
 </pre>
 <h4 dir="rtl">قبل از دستورات لانچ screen بگذارید تا در صورت بستن ترمینال بات ها روشن بمونند
@@ -50,7 +51,7 @@
 <span>killall tmux</span>
 <span>killall screen</span>
 <span>killall -9 bash</span>
-<span>cd inline</span>
+<span>cd inlinePV</span>
 <span>./on.sh</span>
 </pre>
 اگر جایی به مشکل بر خوردید به پی وی بنده مراجعه کنید
