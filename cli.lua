@@ -1127,7 +1127,7 @@ end
 	local users = db:scard("usersbot")
     local allmgs = db:get("allmsg")
 
-					bot.sendMessage(msg.chat_id_, msg.id_, 1, '➖➖➖➖➖➖➖➖➖➖\n`⚜️PriVaTe` *V 2*✅\n\n*🌐Github Link 👇*\n\n`https://github.com/BibakBangTeam/inline.git\n`\n➖➖➖➖➖➖➖➖➖➖\n_📊 BoT Stats 👇_\n\n*🌀 Super Groups 👉* `'..gps..'`\n*👤 Users 👉* `'..users..'`\n*📝 Message Received 👉* `'..allmgs..'`\n➖➖➖➖➖➖➖➖➖➖', 1, 'md')
+					bot.sendMessage(msg.chat_id_, msg.id_, 1, '➖➖➖➖➖➖➖➖➖➖\n`⚜️PriVaTe` *V 2*✅\n\n*🌐Github Link 👇*\n\n`https://github.com/MahdiPvtmAttacker/inlinePV.git\n`\n➖➖➖➖➖➖➖➖➖➖\n_📊 BoT Stats 👇_\n\n*🌀 Super Groups 👉* `'..gps..'`\n*👤 Users 👉* `'..users..'`\n*📝 Message Received 👉* `'..allmgs..'`\n➖➖➖➖➖➖➖➖➖➖', 1, 'md')
 	end
 	  -----------------owner------------------------
       -- owner
