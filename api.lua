@@ -204,7 +204,7 @@ local hash = SUDO..'settings:'..chat..':'..value
               MSG_MAX = (redis:hget("flooding:settings:"..chat,"floodmax") or 5)
 			                WARN_MAX = (redis:hget("warn:settings:"..chat,"warnmax") or 3)
 							local result = settings(chat,lock)
-							if lock == 'photo' or lock == 'audio' or lock == 'video' or lock == 'gif' or lock == 'music' or lock == 'file' or lock == 'link' or lock == 'sticker' or lock == 'text' or lock == 'pin' or lock == 'username' or lock == 'hashtag' or lock == 'contact' then
+							if lock == 'photo' or lock == 'audio' or lock == 'video' or lock == 'gif' or lock == 'music' or lock == 'file' or lock == 'link' or lock == 'sticker' or lock == 'text' or lock == 'pin' or lock == 'username' or lock == 'hashtag' or lock == 'contact' or lock == 'fwd' then
 							q.data = 'left_page:'..chat
 							elseif lock == 'muteall' then
 								if redis:get(SUDO..'muteall'..chat) then
