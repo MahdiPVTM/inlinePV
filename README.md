@@ -8,7 +8,7 @@
 <h4 dir="rtl"> ابتدا سورس را کلون کنید:</h4>
 <h6😠کد زیر را در ترمینال وارد کنید👇)</h6>
 <pre>
-<span>git clone https://github.com/MahdiPvtmAttacker/inlinePV.git</span>
+<span>git clone https://github.com/MahdiPVTM/inlinePV.git</span>
 </pre>
 <h4 dir="rtl">داخل فایل cli.lua بروید
 در خط ۱و۲و۹ بجای username یوزر سرور خودرا قرار دهید
