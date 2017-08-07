@@ -1,4 +1,4 @@
-﻿bot = dofile('/home/username/inlinePV/utils.lua')
+bot = dofile('/home/username/inlinePV/utils.lua')
 json = dofile('/home/username/inlinePV/JSON.lua')
 URL = require "socket.url"
 serpent = require("serpent")
@@ -167,7 +167,7 @@ function ban(msg,chat,user)
     else
   bot.changeChatMemberStatus(chat, user, "Kicked")
   db:sadd(SUDO..'banned'..chat,user)
-  local t = '<code>>کاربر</code> [<b>'..user..'</b>] <code>از گروه مسدود گردید.</code>'
+  local t = '<code>✅ ĐØ₦Ɇ </code>\n<code>▫️Ʉ₴ɆⱤ</code>🎗[<b>'..user..'</b>]🎗<code>нαѕ вєєи вαииє∂.</code>'
   bot.sendMessage(msg.chat_id_, msg.id_, 1, t, 1, 'html')
   end
   end
@@ -204,7 +204,7 @@ function unban(msg,chat,user)
     return false
     end
    db:srem(SUDO..'banned'..chat,user)
-  local t = '<code>>کاربر</code> [<b>'..user..'</b>] <code>از لیست کاربران مسدود شده خارج گردید.</code>'
+  local t = '<code>✅ ĐØ₦Ɇ </code>\n<code>▫️Ʉ₴ɆⱤ</code>🎗[<b>'..user..'</b>]🎗<code>нαѕ вєєи υивαииє∂.</code>'
   bot.sendMessage(msg.chat_id_, msg.id_, 1, t,1, 'html')
   end
   ------------------------------------------------------------
@@ -244,7 +244,7 @@ function user(msg,chat,text,user)
     entities[0] = {ID='MessageEntityBold', offset_=0, length_=0}
 return tdcli_function ({ID="SendMessage", chat_id_=chat, reply_to_message_id_=msg.id_, disable_notification_=0, from_background_=1, reply_markup_=nil, input_message_content_={ID="InputMessageText", text_=text, disable_web_page_preview_=1, clear_draft_=0, entities_=entities}}, dl_cb, nil)
 end
-------------------------------------------------------------
+----------------------------------------------------------
 function settings(msg,value,lock) 
 local hash = SUDO..'settings:'..msg.chat_id_..':'..value
   if value == 'file' then
@@ -446,7 +446,7 @@ if chat_type == 'super' then
 --------------------------gp add -------------------------
 if text == 'add' and is_sudoers(msg) then
 db:sadd('bot:gps', msg.chat_id_)
-bot.sendMessage(msg.chat_id_, msg.id_, 1, '<code>>انجام شد</code>\n<code>گروه به لیست گروه های ربات اضافه شد./nبرای فعال شدن گروه لطفا لینک گروه را ثبت نمایید </code>', 1, 'html')
+bot.sendMessage(msg.chat_id_, msg.id_, 1,'<code>>✅ ĐØ₦Ɇ</code>\n<code>▫️gяσυρ нαѕ вєєи α∂∂є∂ ρℓєαѕє ѕєт gяσυρ ℓιик тσ α¢тιναтє тнє яσвσт `setlink Link`</code>', 1, 'html')
 end 
 --------------------------rem add -------------------------
 if text == 'rem' and is_sudoers(msg) then
@@ -455,7 +455,7 @@ db:del(SUDO..'mods:'..msg.chat_id_)
 db:del(SUDO..'owners:'..msg.chat_id_)
 db:del(SUDO..'banned'..msg.chat_id_)
 db:del('bot:rules'..msg.chat_id_)
-bot.sendMessage(msg.chat_id_, msg.id_, 1, '<code>>انجام شد</code>\n<code>گروه از لیست گروه های ربات پاک شد .</code>', 1, 'html')
+bot.sendMessage(msg.chat_id_, msg.id_, 1, '<code>>`DoNe ✅`</code>\n<code>`The GroUp WaS DeLeTeD FroM The LiSt oF BoT GrouPs 🎯`</code>', 1, 'html')
 end
 --------------------------set link -----------------------
 if text and text:match('^setlink (.*)') and is_owner(msg) then
@@ -1311,7 +1311,7 @@ end
             end
           tdcli_function({
       ID = "GetInlineQueryResults",
-      bot_user_id_ = 448592137,
+      bot_user_id_ = 430928901,
       chat_id_ = msg.chat_id_,
       user_location_ = {
         ID = "Location",
@@ -1912,7 +1912,7 @@ db:set(SUDO..'pinned'..msg.chat_id_,msg.reply_to_message_id_)
    end
    end 
 			 if text == 'bot' then
-          bot.sendMessage(msg.chat_id_, msg.id_, 1,'<b>BOT Online!</b>', 1, 'html')
+          bot.sendMessage(msg.chat_id_, msg.id_, 1,'<b>BoT OnLiNe...: )</b>', 1, 'html')
       end
         if text and text:match('whois (%d+)') then
               local id = text:match('whois (%d+)')
@@ -1935,7 +1935,7 @@ db:set(SUDO..'pinned'..msg.chat_id_,msg.reply_to_message_id_)
       end
    -- member
    if text == 'ping' then
-          local a = {"<i>I Am Online *_*</i>","<b>Pong!</b>"}
+          local a = {"<i>BoT OnLiNe...: )</i>","<b>ι'м σиℓιиє ..!🤖</b>"}
           bot.sendMessage(msg.chat_id_, msg.id_, 1,''..a[math.random(#a)]..'', 1, 'html')
       end
 	  db:incr("allmsg")
@@ -1965,14 +1965,14 @@ db:set(SUDO..'pinned'..msg.chat_id_,msg.reply_to_message_id_)
     if text and msg_type == 'text' and not is_muted(msg.chat_id_,msg.sender_user_id_) then
        if text == "me" then
          local msgs = db:get(SUDO..'total:messages:'..msg.chat_id_..':'..msg.sender_user_id_)
-         bot.sendMessage(msg.chat_id_, msg.id_, 1, '➖➖➖➖➖➖➖➖\n<b>⚜️Your UserID</b> 👉 <code>'..msg.sender_user_id_..'</code>\n<b>⚜️Your Msg Send</b> 👉 <code>'..msgs..'</code>\n➖➖➖➖➖➖➖➖\n👉 @PVTeaM', 1, 'html')
+         bot.sendMessage(msg.chat_id_, msg.id_, 1, '🔅🔅🔅🔅🔅🔅🔅🔅\n<b>🌀YouR UserID</b>=><code>'..msg.sender_user_id_..'</code>\n<b>💠YouR MsG SenD</b>=><code>'..msgs..'</code>\n🔅🔅🔅🔅🔅🔅🔅🔅\n🌐@PVTeaM', 1, 'html')
       end
 end
 end
   -- help 
   if text and text == 'help' then
     if is_sudoers(msg) then
-help = [[متن راهنمای مالک ربات ثبت نشده است.]]
+help = [[برای گرفتن تنظیمات از/n /panel /n استفاده نمایید]]
 
   elseif is_owner(msg) then
     help = [[
@@ -2075,4 +2075,5 @@ end
     }, dl_cb, nil)
 end
   end
-
+  
+  
