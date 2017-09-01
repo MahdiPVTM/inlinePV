@@ -467,7 +467,7 @@ end
 if chackgp(msg) then 
 local chcklink = db:get(SUDO..'grouplink'..msg.chat_id_) 
 if not chcklink and is_owner(msg) then 
-bot.sendMessage(msg.chat_id_, msg.id_, 1, '<code>>لطفا لینک گروه را صبت کنید در غیر اینصورت ربات غیر فعال در گروهتان باقی میماند</code>', 1, 'html')
+bot.sendMessage(msg.chat_id_, msg.id_, 1, '<code>>✔️DoNe\n💠**Please register the group link,** `otherwise the idle robot will remain in your group🔹`</code>', 1, 'html')
 else 
 local ch = msg.chat_id_
 local user_id = msg.sender_user_id_
